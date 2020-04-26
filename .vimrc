@@ -18,8 +18,9 @@ Plug 'mileszs/ack.vim'
 Plug 'easymotion/vim-easymotion'
 let g:plug_timeout = 300        " YouCompleteMeはコンパイルに時間がかかるため
 Plug 'ycm-core/YouCompleteMe', { 'do': './install.py'}
-Plug 'sjl/gundo.vim'
-Plug 'tpope/vim-fugitive'
+Plug 'sjl/gundo.vim'            " Undoツリー管理
+Plug 'tpope/vim-fugitive'       " Gitプラグイン
+Plug 'dense-analysis/ale'       " 文法チェック
 call plug#end()
 
 " Gundo setting
