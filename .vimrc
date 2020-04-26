@@ -19,6 +19,7 @@ Plug 'easymotion/vim-easymotion'
 let g:plug_timeout = 300        " YouCompleteMeはコンパイルに時間がかかるため
 Plug 'ycm-core/YouCompleteMe', { 'do': './install.py'}
 Plug 'sjl/gundo.vim'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " Gundo setting
@@ -36,7 +37,7 @@ set noundofile
 set helplang=ja,en
 set encoding=utf-8
 set clipboard=unnamed,unnamedplus   " システムのクリップボードを使用
-set fileencodings=iso-2022-jp,cp932,sjis,euc-jp,utf-8
+set fileencodings=utf-8,iso-2022-jp,cp932,sjis,euc-jp
 set belloff=all " ベル無効
 " statuslineの表示設定
 set statusline=[%F]%r%m%h%=[%{&fenc!=''?&fenc:&enc}][%{&ff}][%Y]%l,%L%8P
