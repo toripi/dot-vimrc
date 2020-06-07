@@ -46,9 +46,10 @@ set statusline=[%F]%r%m%h%=[%{&fenc!=''?&fenc:&enc}][%{&ff}][%Y]%l,%L%8P
 set laststatus=2
 colorscheme murphy
 set foldmethod=indent   " ファイル内容をインデンで折り畳む
-set wildmenu            " 補完候補をstatuslineに出力 let NERDTreeShowBookmarks = 1   " Vim起動時にNERDTreeのブックマークを開く
-autocmd VimEnter * NERDTree     " Vim起動時にNERDTreeを開く
-autocmd VimEnter * wincmd p     " フォーカスを右に
+set wildmenu            " 補完候補をstatuslineに出力
+" let NERDTreeShowBookmarks = 1   " Vim起動時にNERDTreeのブックマークを開く
+" autocmd VimEnter * NERDTree     " Vim起動時にNERDTreeを開く
+" autocmd VimEnter * wincmd p     " フォーカスを右に
 " NERDTreeのウィンドウのみになった時にvimを閉じる
 autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && 
     \ b:NERDTree.isTabTree()) | q | endif
