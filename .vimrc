@@ -44,6 +44,7 @@ set belloff=all " ベル無効
 set statusline=[%F]%r%m%h%=[%{&fenc!=''?&fenc:&enc}][%{&ff}][%Y]%l,%L%8P
 " statuslineの表示(0:表示しない　1:2以上ウィンドウがある時だけ表示
 set laststatus=2
+set splitbelow          " termを下枠に表示
 " colorscheme murphy
 set foldmethod=indent   " ファイル内容をインデンで折り畳む
 set wildmenu            " 補完候補をstatuslineに出力
