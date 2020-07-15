@@ -13,11 +13,12 @@ call plug#begin()
 Plug 'junegunn/vim-plug'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'tpope/vim-vinegar'
+Plug 'tpope/vim-commentary'     " コメント　In/Out 切り替え
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'mileszs/ack.vim'
 Plug 'easymotion/vim-easymotion'
 let g:plug_timeout = 300        " YouCompleteMeはコンパイルに時間がかかるため
-Plug 'ycm-core/YouCompleteMe', { 'do': './install.py'}
+Plug 'ycm-core/YouCompleteMe', { 'do': './install.py'}  " 入力補完
 Plug 'sjl/gundo.vim'            " Undoツリー管理
 Plug 'tpope/vim-fugitive'       " Gitプラグイン
 Plug 'dense-analysis/ale'       " 文法チェック
@@ -58,6 +59,7 @@ autocmd BufRead * normal zR
 " set number              " 行番号の表示
 
 " 対応する引用符、カッコを入力
+inoremap ` ``<esc>i
 inoremap ' ''<esc>i
 inoremap " ""<esc>i
 inoremap ( ()<esc>i
