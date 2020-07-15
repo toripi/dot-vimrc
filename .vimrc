@@ -52,9 +52,9 @@ set wildmenu            " 補完候補をstatuslineに出力
 " let NERDTreeShowBookmarks = 1   " Vim起動時にNERDTreeのブックマークを開く
 " autocmd VimEnter * NERDTree     " Vim起動時にNERDTreeを開く
 " autocmd VimEnter * wincmd p     " フォーカスを右に
-" NERDTreeのウィンドウのみになった時にvimを閉じる
-autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && 
-    \ b:NERDTree.isTabTree()) | q | endif
+" " NERDTreeのウィンドウのみになった時にvimを閉じる
+" autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTree") && 
+"     \ b:NERDTree.isTabTree()) | q | endif
 autocmd BufRead * normal zR
 " set number              " 行番号の表示
 
